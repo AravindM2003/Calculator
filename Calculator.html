@@ -1,0 +1,121 @@
+<!DOCTYPE html>  
+<html lang = "en">  
+<head>  
+<title> JavaScript Calculator </title>  
+  
+<style>  
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://img.freepik.com/free-vector/background-knowledge-day-celebration_52683-131709.jpg);
+    background-color: rgb(9, 0, 0);
+    overflow: hidden;
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+#clear{  
+width: 270px;  
+border: 3px solid gray;  
+border-radius: 3px;  
+padding: 20px;  
+background-color:    #bdeaee ;  
+}  
+#clear:hover {
+  background-color: #7abbd7;
+  color: 3px solid white;
+}
+  
+.container 
+{  
+    
+width: 300px;  
+height: 530px;  
+margin-top: 100px;
+margin-left: 50px;
+border: 4px solid #00000056;  
+border-radius: 5px;  
+padding: 20px;  
+box-shadow: rgba(0, 0, 0, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+display: flex;
+align-items: center;
+justify-content: center;
+}  
+  
+  
+  
+input  
+{  
+width: 30px;  
+background-color:  #bdeaee ;  
+color: rgb(0, 0, 0);  
+border: 3px solid gray;  
+border-radius: 5px;  
+padding: 26px;  
+margin: 5px;  
+font-size: 15px;  
+align-items: center;
+justify-content: center;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}  
+input:hover {
+  background-color: #7abbd7;
+  color: 3px solid  white;
+}
+#calc{  
+width: 250px;  
+border: 2px solid black;  
+border-radius: 3px;  
+padding: 18px;  
+margin: auto;  
+}  
+  
+</style>  
+  
+</head>  
+<body>  
+ 
+<div class= "container">  
+<form name = "form1">  
+      
+  
+  <input id = "calc" type ="text" name = "answer"> <br> <br>  
+  
+  <input type = "button" value = "1" onclick = "form1.answer.value += '1' ">  
+  <input type = "button" value = "2" onclick = "form1.answer.value += '2' ">  
+  <input type = "button" value = "3" onclick = "form1.answer.value += '3' ">  
+   <input type = "button" value = "+" onclick = "form1.answer.value += '+' ">  
+  <br> <br>  
+    
+  <input type = "button" value = "4" onclick = "form1.answer.value += '4' ">  
+  <input type = "button" value = "5" onclick = "form1.answer.value += '5' ">  
+  <input type = "button" value = "6" onclick = "form1.answer.value += '6' ">  
+  <input type = "button" value = "-" onclick = "form1.answer.value += '-' ">  
+  <br> <br>  
+    
+  <input type = "button" value = "7" onclick = "form1.answer.value += '7' ">  
+  <input type = "button" value = "8" onclick = "form1.answer.value += '8' ">  
+  <input type = "button" value = "9" onclick = "form1.answer.value += '9' ">  
+  <input type = "button" value = "*" onclick = "form1.answer.value += '*' ">  
+  <br> <br>  
+    
+    
+  <input type = "button" value = "/" onclick = "form1.answer.value += '/' ">  
+  <input type = "button" value = "0" onclick = "form1.answer.value += '0' ">  
+    <input type = "button" value = "." onclick = "form1.answer.value += '.' ">  
+    
+  <input type = "button" value = "=" onclick = "form1.answer.value = eval(form1.answer.value) ">  
+  <br>   
+  
+  <input type = "button" value = "Clear All" onclick = "form1.answer.value = ' ' " id= "clear" >  
+  <br>   
+    
+</form>  
+</div>  
+</body>  
+</html>  
